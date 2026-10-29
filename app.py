@@ -198,7 +198,7 @@ La decisión final corresponde al usuario.
                     with genai.Client(
                         api_key=clave,
                         http_options=types.HttpOptions(
-                            timeout=30000
+                            timeout=120000
                         )
                     ) as cliente:
                         respuesta = cliente.models.generate_content(
