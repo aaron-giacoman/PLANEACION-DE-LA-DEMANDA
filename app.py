@@ -202,7 +202,7 @@ La decisión final corresponde al usuario.
                         )
                     ) as cliente:
                         respuesta = cliente.models.generate_content(
-                            model="gemini-2.5-flash",
+                            model="gemini-flash-latest",
                             contents=json.dumps(
                                 r, ensure_ascii=False
                             ),
