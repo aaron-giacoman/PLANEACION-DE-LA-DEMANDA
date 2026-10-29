@@ -255,6 +255,8 @@ La decisión final corresponde al usuario.
                 st.warning(
                     mensaje + " El cálculo sigue disponible."
                 )
+                 st.write("Tipo de error:", type(error).__name__)
+                st.write("Código:", str(codigo))
 
     if st.session_state.get("analisis"):
         st.markdown(st.session_state["analisis"])
